@@ -48,7 +48,9 @@ It may include charts (like line charts and doughnut charts), transaction sectio
 * Use navigation elements such as the sidebar and header components to move between different sections of the dashboard.
 ## overView
 ![Screenshot (400)](https://github.com/shaharyaaransari/social_sense/assets/113225294/6e85f265-7388-4b5a-9a71-aa20266c08ca)
+![Screenshot (404)](https://github.com/shaharyaaransari/social_sense/assets/113225294/819965e7-10d9-4de9-bafe-402602980997)
 ![Screenshot (401)](https://github.com/shaharyaaransari/social_sense/assets/113225294/945c3960-8a09-4bfa-9ba2-b62890afee8a)
 ![Screenshot (402)](https://github.com/shaharyaaransari/social_sense/assets/113225294/dfcb2dad-d062-4d93-baf0-a9ae28efcc90)
 ![Screenshot (403)](https://github.com/shaharyaaransari/social_sense/assets/113225294/82fedc87-7c7f-4af6-811b-4d0db69b7068)
+
 
