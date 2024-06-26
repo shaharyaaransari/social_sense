@@ -17,7 +17,9 @@ const Theme = () => {
     return (
         <div className="flex flex-col md:flex-row justify-between">  
            
-            <Sidebar />
+           <div className="hidden md:block">
+        <Sidebar />
+    </div>
             
          
             <div className="w-full md:w-3/4 px-4">
@@ -33,7 +35,8 @@ const Theme = () => {
                     <ThemeSelector setTheme={setTheme} />
 
                     
-                    <Content theme={theme}  />
+                    <Content theme={theme} className="sm:w-full sm:w-70" />
+
                 </div>
             </div>
         </div>
