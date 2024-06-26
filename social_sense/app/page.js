@@ -11,6 +11,11 @@ export default function Home() {
             <Button className="text-center w-full">Frame 1</Button>
           
         </Link>
+        <Link href="/frame2">
+          
+          <Button className="text-center w-full">Frame 2</Button>
+        
+      </Link>
       </div>
     </main>
   );
