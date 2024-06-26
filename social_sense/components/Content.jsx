@@ -3,12 +3,15 @@ import React from "react";
 
 
 
-const Content = () => {
-
+const Content = ({theme}) => {
 
   return (
     <div  style={{width:"60%", marginRight:"10px"}}>
-      <div  className=" mt-6 border-slate-400 border-2 p-2 rounded-md" >
+      <div  className={`mt-6 border-slate-400 border-2 p-2 rounded-md`}  style={{
+      backgroundColor: theme.color ? theme.color : 'transparent',
+      backgroundImage: theme.gradient ? theme.gradient : 'none',
+    // add other styles as needed
+}}> 
         <div className="relative border-dashed p-1 border-2 border-blue-300 rounded-md">
           <img
             src={"https://i.pinimg.com/originals/d8/39/74/d839742a057e1d111d0373fa614de906.jpg"}

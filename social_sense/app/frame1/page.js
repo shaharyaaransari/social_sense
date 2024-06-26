@@ -1,29 +1,43 @@
-import Content from '@/components/Content'
-import LowerHeader from '@/components/LowerHeader'
-import Sidebar from '@/components/Sidebar'
-import ThemeSelector from '@/components/ThemeSelector'
-import { UpperHeader } from '@/components/UpperHeader'
+"use client"; // Ensure this component is rendered on the client side
 
-
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import Content from '@/components/Content';
+import LowerHeader from '@/components/LowerHeader';
+import Sidebar from '@/components/Sidebar';
+import ThemeSelector from '@/components/ThemeSelector';
+import { UpperHeader } from '@/components/UpperHeader';
 
 const Theme = () => {
-  return (
-    <div className="flex justify-between">  
-       
-        <Sidebar/>
-         <div style={{width:"80%", marginRight:"20px"}}>
-         <UpperHeader/>
-          < LowerHeader/>
-            <div  className='flex justify-between'>
-               <ThemeSelector/>
-            <Content/>
-            </div>
-            
-         </div>
-          
-    </div>
-  )
-}
+    const [theme, setTheme] = useState({ color: "white" });
 
-export default Theme
+    useEffect(() => {
+       
+    }, [theme]);
+
+    return (
+        <div className="flex flex-col md:flex-row justify-between">  
+           
+            <Sidebar />
+            
+         
+            <div className="w-full md:w-3/4 px-4">
+              
+                <UpperHeader />
+
+               
+                <LowerHeader />
+
+             
+                <div className='flex flex-col md:flex-row justify-between mt-4'>
+                    
+                    <ThemeSelector setTheme={setTheme} />
+
+                    
+                    <Content theme={theme}  />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Theme;
