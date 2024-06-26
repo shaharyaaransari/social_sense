@@ -132,7 +132,7 @@ export default function Navbar() {
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
-                href="#"
+                href="/"
               className="block w-20 h-10 p-4 py-3 px-3 text-yellow-800 bg-yellow-100 rounded md:bg-transparent md:bg-yellow-100 md:p-0 md:dark:text-yellow-700 flex items-center justify-center"
                 aria-current="page"
               >
