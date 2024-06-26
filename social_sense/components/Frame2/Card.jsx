@@ -1,15 +1,16 @@
 import React from "react";
+import ProjectionChart from "./ProjectionChart";
 
 const Card = () => {
   return (
     <>
-      <div className="h-fit mt-4 hidden flex-col md:flex p-4 bg-slate-100">
+      <div className=" bg-slate-100">
         
-        <div className="flex gap-10 space-y-4 p-5 pt-4 w-full">
-          <div className="flex h-1/2 w-full justify-between items-center">
-            <div defaultValue="overview" className="w-2/5 space-y-4">
-              <div value="overview" className="space-y-4 w-full">
-                <div className="gap-4 flex w-full md:grid-cols-2 lg:grid-cols-4">
+      <div className="flex flex-col sm:flex-col md:flex-row gap-10 p-5 pt-4 w-full">
+          <div className="flex  w-full justify-between items-center">
+            
+              
+                <div className="gap-6 flex w-full md:grid-cols-1 lg:grid-cols-4">
                   <div className="w-1/2 grid gap-4">
                     <div className="w-full p-4 shadow-lg rounded-lg border border-slate-200 bg-white text-slate-950 shadow-sm dark:border-slate-800 dark:bg-slate-950 dark:text-slate-50 ">
                       <div className="flex flex-row  gap-10 space-y-0 pb-2">
@@ -105,12 +106,13 @@ const Card = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              
+            
            
           </div>
+          <ProjectionChart/>
         </div>
-        
+      
       </div>
     </>
   );

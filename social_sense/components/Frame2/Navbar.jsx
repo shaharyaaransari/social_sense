@@ -59,7 +59,7 @@ export default function Navbar() {
             />
           </div>
 
-          <div className="relative ml-5">
+          <div className="relative ml-5 hidden md:block">
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-black">
               <li>
                 <IoSettingsOutline className="w-8 h-8 text-gray-500 dark:text-gray-400 ml-2 md:ml-0" />
